@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ConverterToJson"
+    }
+  },
+  "defaultProject": "ConverterToJson",
+  "cli": {
+    "analytics": "0c91f046-63d6-473f-a197-481ba7c73646"
+  }
 }
