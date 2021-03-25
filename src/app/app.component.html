@@ -21,7 +21,14 @@
   <form>
     <div class="form-group">
       <label for="exampleFormControlFile1">Veuillez selectionnez votre fichier de type CSV svp!</label>
-      <input type="file" class="form-control-file" id="exampleFormControlFile1">
+      <!-- <input type="file" class="form-control-file" id="exampleFormControlFile1"> -->
+
+      <Ngx-CSVtoJSON (onConvert)="convert($event)" (onFail)="onError($event)"></Ngx-CSVtoJSON>
+
+<div>
+  {{convertedObj}}
+</div>
+
     </div>
   </form>
 </div>

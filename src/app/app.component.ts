@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ConverterToJson';
+
+  // name = "Angular " + VERSION.major;
+  convertedObj:any = "";
+
+
+
+  convert(objArray) {
+    console.log(objArray);
+    this.convertedObj = JSON.stringify(objArray, null, 2);
+  }
+  onError(err) {
+    this.convertedObj = err
+    console.log(err);
+  }
 }

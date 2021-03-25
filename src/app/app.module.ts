@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {NgxCSVtoJSONModule} from 'ngx-csvto-json';
+
 
 @NgModule({
   declarations: [
@@ -10,6 +12,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
+    NgxCSVtoJSONModule,
     AppRoutingModule
   ],
   providers: [],
